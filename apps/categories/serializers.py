@@ -6,10 +6,11 @@ from .search_indexes import CategoryIndex
 
 
 class CategorySerializer(serializers.ModelSerializer):
+    url = serializers.HyperlinkedIdentityField(view_name="api:category-detail")
 
     class Meta:
         model = Category
-        fields = ('id', 'title', 'name', 'description')
+        fields = ('id', 'url', 'title', 'name', 'description')
         read_only_fields = ('id',)
 
 

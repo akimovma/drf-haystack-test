@@ -1,5 +1,5 @@
 proc_name = 'test_admin'
-bind = '172.16.101.186:8000'
+bind = '127.0.0.1:8001'
 workers = 3
 user = 'user'
 chdir = '/home/user/Projects/test_admin/test_admin/'
